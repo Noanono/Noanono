@@ -1,0 +1,25 @@
+<section class="about">
+    <h2>{{ about.name }}</h2>
+    <p>{{ about.summary }}</p>
+    <ul class="contact">
+        <li><strong>Adresse :</strong> {{ about.address }}</li>
+        <li><strong>Téléphone :</strong> {{ about.phone }}</li>
+        <li><strong>Email :</strong> {{ about.email }}</li>
+    </ul>  
+    <section class="skills" >
+        <h3>Compétences</h3>
+        <ul>
+            @for (skill of skills; track $index) {
+                <li>{{ skill }}</li>
+            }
+        </ul>
+    </section>
+    <section class="interests">
+        <h3>Centres d'intérêts</h3>
+        <ul>
+            @for (interest of interests; track $index) {
+                <li>{{ interest }}</li>
+            }
+        </ul>
+    </section>
+</section>

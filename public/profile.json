@@ -1,0 +1,94 @@
+{
+  "about": {
+    "name": "Noah Soler",
+    "address": "28 rue Charles de Gaulle, Saint-Etienne, France",
+    "phone": "07 83 81 70 38",
+    "email": "soler.noah@gmail.com",
+    "summary": "Actuellement élève ingénieur à Telecom Saint-Etienne, je suis dynamique et possède un sens du leadership développé. Je cherche une alternance en DATA Engineering pour me réorienter dans ce domaine. Je serais élève dans la formation FISA DE (Formation Ingénieur sous Statut Apprenti, cursus Data Engineering) de Télécom Saint-Etienne à partir de septembre 2025."
+  },
+  "skills": [
+    "JavaScript", "TypeScript", "Python", "C", "C++", "C#", "MySQL",
+    "Développement WEB", "Angular", "HTML5", "CSS", "Microsoft 365", "Power BI", "SharePoint"
+  ],
+  "experiences": [
+    {
+      "title": "Stagiaire projet",
+      "company": "Safran Helicopter Engines",
+      "location": "Bordes",
+      "start": "2025-05",
+      "end": null,
+      "description": "Réalisation d'un portail de partage des documents de connaissance du service. Utilisation des outils Microsoft 365, Power BI, SharePoint et Excel. Conception d’une base de données."
+    },
+    {
+      "title": "Manutentionnaire",
+      "company": "La Poste",
+      "location": "Pau",
+      "start": "2024-07",
+      "end": "2024-08",
+      "description": "Agent polyvalent en centre de tri."
+    },
+    {
+      "title": "Stagiaire projet",
+      "company": "Trésorerie générale du royaume",
+      "location": "Rabat, Maroc",
+      "start": "2024-04",
+      "end": "2024-06",
+      "description": "Conception et développement d'une application WEB de GMAO. Utilisation de la technologie Angular."
+    }
+  ],
+  "education": [
+    {
+      "degree": "FISE",
+      "school": "Télécom Saint-Etienne",
+      "location": "Saint-Etienne",
+      "start": "2024-09",
+      "end": null,
+      "description": "Formation d'Ingénieur sous Statut Étudiant. Formation d'ingénieur généraliste en informatique et optique."
+    },
+    {
+      "degree": "CITISE",
+      "school": "Télécom Saint-Etienne",
+      "location": "Saint-Etienne",
+      "start": "2022-09",
+      "end": "2024-06",
+      "description": "Classe préparatoire intégrée diplômante. Diplômes obtenus : DUT GEII, DU CITISE. Équivalent L2 Physique de l’ingénieur."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Application WEB vitrine",
+      "organization": "BA'TSE",
+      "location": "Saint-Etienne",
+      "start": "2024-12",
+      "end": "2025-02",
+      "description": "Développement d'une application WEB vitrine pour la liste BDE « BA'TSE ». Technologies : HTML5, CSS, TypeScript, Angular."
+    },
+    {
+      "title": "Logiciel de simulation de gravité",
+      "organization": "Télécom Saint-Etienne",
+      "location": "Saint-Etienne",
+      "start": "2025-01",
+      "end": "2025-05",
+      "description": "Développement d'un logiciel de simulation de gravité d'atomes de Sable en C# avec SFML."
+    }
+  ],
+  "personal": [
+    {
+      "title": "Président",
+      "organization": "Bureau des Sports",
+      "location": "Saint-Etienne",
+      "start": "2025-05",
+      "end": null,
+      "description": "Président pour l'année 2025-2026. Gestion d'équipe, administrative et événementielle."
+    },
+    {
+      "title": "Marathon en relais",
+      "organization": "Marathon International de Biarritz",
+      "location": "Biarritz",
+      "start": "2025-04",
+      "end": "2025-04",
+      "description": "Participation à un marathon en relais (14km)."
+    }
+  ],
+  "interests": ["Ski", "Snowboard", "Course à pied"]
+}

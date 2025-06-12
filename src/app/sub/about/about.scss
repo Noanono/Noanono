@@ -1,0 +1,34 @@
+.about {
+  margin: 2rem auto;
+  max-width: 700px;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+  @media (max-width: 600px) {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+
+  .contact, .skills ul, .interests ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .contact li, .skills li, .interests li {
+    background: #e0e7ef;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
