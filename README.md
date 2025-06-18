@@ -24,7 +24,7 @@ I'm passionate about software development, technology, and building creative sol
 
 ## 📈 GitHub Stats
 
-![Noah's GitHub stats](https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=radical)
+![Noah's GitHub stats](https://github-readme-stats.vercel.app/api?username=Noanono&show_icons=true&theme=radical)
 
 ---
 
