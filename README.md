@@ -1,59 +1,32 @@
-# Vitrine
+# 👋 Hi, I'm Noah!
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
+Welcome to my GitHub profile!  
+I'm passionate about software development, technology, and building creative solutions.
 
-## Development server
+## 🚀 About Me
 
-To start a local development server, run:
+- 💻 Front-End developer
+- 🌱 Always learning new technologies
+- 🛠️ Interested in web development, automation, and open source
 
-```bash
-ng serve
-```
+## 📫 How to reach me
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- [LinkedIn](https://www.linkedin.com/in/noah-soler-9b0471267/)
+- [Instagram](https://www.instagram.com/noah_slr64/)
+- [Email](mailto:soler.noah@gmail.com)
 
-## Code scaffolding
+## 🧰 Technologies & Tools
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![Node.js](https://img.shields.io/badge/-Node.js-black?style=flat-square&logo=node.js)
+![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=python)
+![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
 
-```bash
-ng generate component component-name
-```
+## 📈 GitHub Stats
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+![Noah's GitHub stats](https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=radical)
 
-```bash
-ng generate --help
-```
+---
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Thanks for visiting my profile!  
+Let's connect and build something awesome together 🚀
