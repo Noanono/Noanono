@@ -1,34 +1,177 @@
+/* Mobile First - Card Style pour la section about */
 .about {
-  margin: 2rem auto;
-  max-width: 700px;
-  background: #f9f9f9;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  @media (max-width: 600px) {
-    padding: 1rem;
-    max-width: 98vw;
+.about:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.about h2 {
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 0.5rem;
+}
+
+.about > p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.about .contact {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 0 1.5rem 0;
+  list-style: none;
+  border-left: 4px solid #3b82f6;
+}
+
+.about .contact li {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.about .contact strong {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.about .skills,
+.about .interests {
+  margin: 1.5rem 0 0 0;
+}
+
+.about .skills h3,
+.about .interests h3 {
+  color: #1f2937;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.about .skills h3:before {
+  content: "🛠️";
+  margin-right: 0.5rem;
+}
+
+.about .interests h3:before {
+  content: "🎯";
+  margin-right: 0.5rem;
+}
+
+.about .skills ul,
+.about .interests ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.about .skills li,
+.about .interests li {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.about .skills li:hover,
+.about .interests li:hover {
+  transform: scale(1.05);
+}
+
+.about .interests li {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+/* Tablette - 768px et plus */
+@media (min-width: 768px) {
+  .about {
+    padding: 2rem;
+    margin: 1.5rem;
+    max-width: 600px;
   }
-
-  h2, h3 {
-    text-align: center;
+  
+  .about h2 {
+    font-size: 1.75rem;
   }
-
-  .contact, .skills ul, .interests ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-  }
-
-  .contact li, .skills li, .interests li {
-    background: #e0e7ef;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+  
+  .about > p {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+  }
+  
+  .about .contact {
+    padding: 1.25rem;
+  }
+  
+  .about .contact li {
+    font-size: 0.95rem;
+  }
+  
+  .about .skills h3,
+  .about .interests h3 {
+    font-size: 1.2rem;
+  }
+  
+  .about .skills li,
+  .about .interests li {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Desktop - 1024px et plus */
+@media (min-width: 1024px) {
+  .about {
+    padding: 2.5rem;
+    margin: 2rem;
+    max-width: 700px;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+  }
+  
+  .about .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+    padding: 1.5rem;
+  }
+  
+  .about .contact li:last-child {
+    grid-column: 1 / -1;
+  }
+  
+  .about .skills ul,
+  .about .interests ul {
+    gap: 0.75rem;
+  }
+  
+  .about .skills li,
+  .about .interests li {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
 }

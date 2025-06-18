@@ -20,4 +20,12 @@ export class AboutComponent implements OnInit {
       this.interests = data.interests;
     });
   }
+
+  ngonload() {
+    this.profileService.getProfile().subscribe((data: any) => {
+      this.about = data.about;
+      this.skills = data.skills;
+      this.interests = data.interests;
+    });
+  }
 }
