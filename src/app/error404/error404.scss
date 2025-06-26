@@ -1,0 +1,45 @@
+.error404-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.error404-container h1 {
+  font-size: 7rem;
+  margin: 0.2em 0 0.1em 0;
+  color: #e74c3c;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.error404-container h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  color: #444;
+}
+
+.error404-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+  color: #555;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 0.7em 2em;
+  background: #e74c3c;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.back-home:hover {
+  background: #c0392b;
+}
