@@ -1,1 +1,11 @@
+<nav class="main-nav">
+  <ul #navList>
+    <li><a href="#about-section" (click)="scrollToSection($event, 'about-section')" id="nav-about"><i class="fa fa-user"></i> À propos</a></li>
+    <li><a href="#education-section" (click)="scrollToSection($event, 'education-section')" id="nav-education"><i class="fa fa-graduation-cap"></i> Formation</a></li>
+    <li><a href="#pro-section" (click)="scrollToSection($event, 'pro-section')" id="nav-pro"><i class="fa fa-briefcase"></i> Expérience Pro</a></li>
+    <li><a href="#perso-section" (click)="scrollToSection($event, 'perso-section')" id="nav-perso"><i class="fa fa-users"></i> Expérience Perso</a></li>
+    <li><a href="#projects-section" (click)="scrollToSection($event, 'projects-section')" id="nav-projects"><i class="fa fa-code"></i> Projets</a></li>
+    <div class="nav-indicator" #navIndicator></div>
+  </ul>
+</nav>
 <router-outlet></router-outlet>

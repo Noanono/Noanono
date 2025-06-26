@@ -1,108 +1,49 @@
 /* Mobile First - Card Style pour la section about */
 .about {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  margin: 1rem;
-  border: 1px solid #e5e7eb;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.about:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.about h2 {
-  color: #1f2937;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0 0 1rem 0;
-  border-bottom: 2px solid #3b82f6;
-  padding-bottom: 0.5rem;
-}
-
-.about > p {
-  color: #4b5563;
-  line-height: 1.6;
-  margin: 0 0 1.5rem 0;
-  font-size: 0.95rem;
-}
-
-.about .contact {
-  background: #f8fafc;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 0 0 1.5rem 0;
-  list-style: none;
-  border-left: 4px solid #3b82f6;
-}
-
-.about .contact li {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  color: #374151;
-}
-
-.about .contact strong {
-  color: #1f2937;
-  font-weight: 600;
-}
-
-.about .skills,
-.about .interests {
-  margin: 1.5rem 0 0 0;
-}
-
-.about .skills h3,
-.about .interests h3 {
-  color: #1f2937;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 0 0.75rem 0;
+  margin: 2rem auto;
+  max-width: 900px;
+  min-width: 320px;
+  width: 90vw;
+  background: #f9f9f9;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
+  justify-content: center;
+  text-align: center;
 
-.about .skills h3:before {
-  content: "🛠️";
-  margin-right: 0.5rem;
-}
+  @media (max-width: 600px) {
+    padding: 1rem;
+    max-width: 98vw;
+    min-width: unset;
+    width: 98vw;
+  }
 
-.about .interests h3:before {
-  content: "🎯";
-  margin-right: 0.5rem;
-}
+  h2,
+  h3 {
+    text-align: center;
+  }
 
-.about .skills ul,
-.about .interests ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
+  .contact,
+  .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
 
-.about .skills li,
-.about .interests li {
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: transform 0.2s ease;
-}
-
-.about .skills li:hover,
-.about .interests li:hover {
-  transform: scale(1.05);
-}
-
-.about .interests li {
-  background: linear-gradient(135deg, #10b981, #059669);
+  .contact li,
+  .skills li {
+    background: #e0e7ef;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* Tablette - 768px et plus */
@@ -112,28 +53,28 @@
     margin: 1.5rem;
     max-width: 600px;
   }
-  
+
   .about h2 {
     font-size: 1.75rem;
   }
-  
-  .about > p {
+
+  .about>p {
     font-size: 1rem;
   }
-  
+
   .about .contact {
     padding: 1.25rem;
   }
-  
+
   .about .contact li {
     font-size: 0.95rem;
   }
-  
+
   .about .skills h3,
   .about .interests h3 {
     font-size: 1.2rem;
   }
-  
+
   .about .skills li,
   .about .interests li {
     font-size: 0.85rem;
@@ -148,30 +89,172 @@
     margin: 2rem;
     max-width: 700px;
   }
-  
+
   .about h2 {
     font-size: 2rem;
   }
-  
+
   .about .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem 1rem;
     padding: 1.5rem;
   }
-  
+
   .about .contact li:last-child {
     grid-column: 1 / -1;
   }
-  
+
   .about .skills ul,
   .about .interests ul {
     gap: 0.75rem;
   }
-  
+
   .about .skills li,
   .about .interests li {
     font-size: 0.9rem;
     padding: 0.6rem 1.2rem;
+  }
+}
+
+/* Styles spécifiques à la section about dans about.scss */
+.about.section-container {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  max-width: none;
+  width: 100vw;
+  padding: 2.5rem 0 2rem 0;
+  margin: 0 auto 2rem auto;
+
+  // Réduit l'espace entre la barre de navigation et le contenu
+  margin-top: 2.5rem !important;
+  padding-top: 1.5rem !important;
+}
+
+.about.section-container h2 {
+  margin-top: 0.5rem;
+}
+
+.about.section-container .profile-photo {
+  margin-bottom: 1.2rem;
+}
+
+.about.section-container .contact {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: center;
+  margin: 1.2rem 0 1.5rem 0;
+  padding: 0;
+}
+
+.about.section-container .contact li {
+  background: none;
+  color: #434649;
+  font-size: 1.05rem;
+  margin: 0;
+  padding: 0 0.5rem;
+  border: none;
+  box-shadow: none;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.about.section-container .contact strong {
+  color: #888;
+  font-weight: 500;
+  margin-right: 0.2em;
+}
+
+.about.section-container .skills ul {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(250px, 1fr));
+  width: 90%;
+  margin: 0.5rem auto 0 auto;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  grid-auto-rows: minmax(36px, auto);
+}
+
+.about.section-container .skills li {
+  background: #1976d2;
+  color: #fff;
+  border-radius: 1.2rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.02rem;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(25,118,210,0.10);
+  margin: 0;
+  border: none;
+  text-align: center;
+  transition: background 0.2s;
+}
+.about.section-container .skills li:hover {
+  background: #1251a3;
+}
+
+// Liens de la section compétences (skills) en blanc, sans soulignement
+.about.section-container .skills a {
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 500;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+.about.section-container .skills a:hover,
+.about.section-container .skills a:focus {
+  color: #e6f0fa !important;
+  text-decoration: underline !important;
+  outline: none;
+}
+
+// Liens de la section contact (about) au format précédent
+.about.section-container .contact a {
+  color: #0a66c2 !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+.about.section-container .contact a:hover,
+.about.section-container .contact a:focus {
+  color: #004182 !important;
+  text-decoration: underline;
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .about.section-container .contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+/* Styles déplacés dans styles.scss via .section-container */
+.section-container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  width: 90vw;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-header .profile-photo {
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .about-header {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

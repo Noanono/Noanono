@@ -1,0 +1,15 @@
+<section class="education section-container">
+  <h2>Formation</h2>
+  <div class="education-list">
+    <div class="education-item" *ngFor="let edu of education">
+      <img *ngIf="edu.image" [src]="edu.image" alt="{{edu.school}}" class="education-img" />
+      <div class="education-details">
+        <h3>{{ edu.degree }} <span *ngIf="edu.school">- {{ edu.school }}</span></h3>
+        <p><strong>Lieu :</strong> {{ edu.location }}</p>
+        <p><strong>Période :</strong> {{ edu.start }} - {{ edu.end || 'Aujourd\'hui' }}</p>
+        <p>{{ edu.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="section-separator" />

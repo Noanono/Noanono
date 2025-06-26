@@ -1,25 +1,32 @@
-<section class="about">
+<section class="about section-container" *ngIf="about">
+  <div class="about-header">
+    <img src="Visage_pro.jpg" alt="Photo de Noah Soler" class="profile-photo" />
     <h2>{{ about.name }}</h2>
-    <p>{{ about.summary }}</p>
-    <ul class="contact">
-        <li><strong>Adresse :</strong> {{ about.address }}</li>
-        <li><strong>Téléphone :</strong> {{ about.phone }}</li>
-        <li><strong>Email :</strong> {{ about.email }}</li>
-    </ul>  
-    <section class="skills" >
-        <h3>Compétences</h3>
-        <ul>
-            @for (skill of skills; track $index) {
-                <li>{{ skill }}</li>
-            }
-        </ul>
-    </section>
-    <section class="interests">
-        <h3>Centres d'intérêts</h3>
-        <ul>
-            @for (interest of interests; track $index) {
-                <li>{{ interest }}</li>
-            }
-        </ul>
-    </section>
+  </div>
+  <p>{{ about.summary }}</p>
+  <ul class="contact">
+    <li><strong>Adresse :</strong> <a [href]="'https://www.google.com/maps/search/' + encodeURIComponent(about.address)" target="_blank" rel="noopener">{{ about.address }}</a></li>
+    <li><strong>Téléphone :</strong> <a [href]="'tel:' + about.phone">{{ about.phone }}</a></li>
+    <li><strong>Email :</strong> <a [href]="'mailto:' + about.email + '?subject=Contact%20depuis%20votre%20site%20web'">{{ about.email }}</a></li>
+  </ul>
+  <section class="skills" *ngIf="skills.length">
+    <h3>Compétences</h3>
+    <ul>
+      <li *ngFor="let skill of skills">
+        <ng-container *ngIf="skill.link; else noLink">
+          <a [href]="skill.link" target="_blank" rel="noopener">{{ skill.name }}</a>
+        </ng-container>
+        <ng-template #noLink>{{ skill.name }}</ng-template>
+      </li>
+    </ul>
+  </section>
 </section>
+<hr class="section-separator" />
+<div *ngIf="!about && !error" style="color:gray;">
+  Chargement...
+</div>
+<div *ngIf="error" style="color:red;">
+  [DEBUG] Erreur lors du chargement des données.<br>
+  about = {{ about | json }}<br>
+  skills = {{ skills | json }}
+</div>

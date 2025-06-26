@@ -1,1 +1,14 @@
-<p>projects works!</p>
+<section class="projects section-container">
+  <h2>Projets</h2>
+  <div class="projects-list">
+    <div class="project-item" *ngFor="let project of projects">
+      <img *ngIf="project.image" [src]="project.image" alt="{{project.title}}" class="project-img" />
+      <div class="project-details">
+        <h3>{{ project.title }} <span *ngIf="project.organization">- {{ project.organization }}</span></h3>
+        <p><strong>Lieu :</strong> {{ project.location }}</p>
+        <p><strong>Période :</strong> {{ project.start }} - {{ project.end || 'Aujourd\'hui' }}</p>
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

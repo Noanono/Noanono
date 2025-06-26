@@ -1,0 +1,35 @@
+/* Styles déplacés dans styles.scss via .section-container */
+
+.personal-experience {
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  h2 {
+    color: #2a3a4a;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 1.5rem;
+      background: #f4f8fb;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    max-width: 98vw;
+    padding: 0 0.5rem;
+    ul li {
+      font-size: 0.95rem;
+      padding: 0.7rem;
+    }
+  }
+}

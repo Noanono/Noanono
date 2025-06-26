@@ -7,8 +7,20 @@
     "summary": "Actuellement élève ingénieur à Telecom Saint-Etienne, je suis dynamique et possède un sens du leadership développé. Je cherche une alternance en DATA Engineering pour me réorienter dans ce domaine. Je serais élève dans la formation FISA DE (Formation Ingénieur sous Statut Apprenti, cursus Data Engineering) de Télécom Saint-Etienne à partir de septembre 2025."
   },
   "skills": [
-    "JavaScript", "TypeScript", "Python", "C", "C++", "C#", "MySQL",
-    "Développement WEB", "Angular", "HTML5", "CSS", "Microsoft 365", "Power BI", "SharePoint"
+    { "name": "JavaScript", "link": "https://developer.mozilla.org/fr/docs/Web/JavaScript" },
+    { "name": "TypeScript", "link": "https://www.typescriptlang.org/" },
+    { "name": "Python", "link": "https://www.python.org/" },
+    { "name": "C", "link": "https://fr.wikipedia.org/wiki/C_(langage)" },
+    { "name": "C++", "link": "https://fr.wikipedia.org/wiki/C%2B%2B" },
+    { "name": "C#", "link": "https://learn.microsoft.com/fr-fr/dotnet/csharp/" },
+    { "name": "MySQL", "link": "https://www.mysql.com/" },
+    { "name": "Développement WEB", "link": "https://developer.mozilla.org/fr/docs/Learn" },
+    { "name": "Angular", "link": "https://angular.dev/" },
+    { "name": "HTML5", "link": "https://developer.mozilla.org/fr/docs/Web/HTML" },
+    { "name": "CSS", "link": "https://developer.mozilla.org/fr/docs/Web/CSS" },
+    { "name": "Microsoft 365", "link": "https://www.microsoft.com/fr-fr/microsoft-365" },
+    { "name": "Power BI", "link": "https://powerbi.microsoft.com/fr-fr/" },
+    { "name": "SharePoint", "link": "https://www.microsoft.com/fr-fr/microsoft-365/sharepoint/collaboration" }
   ],
   "experiences": [
     {
@@ -17,7 +29,8 @@
       "location": "Bordes",
       "start": "2025-05",
       "end": null,
-      "description": "Réalisation d'un portail de partage des documents de connaissance du service. Utilisation des outils Microsoft 365, Power BI, SharePoint et Excel. Conception d’une base de données."
+      "description": "Réalisation d'un portail de partage des documents de connaissance du service. Utilisation des outils Microsoft 365, Power BI, SharePoint et Excel. Conception d’une base de données.",
+      "image": "assets/experiences/safran.png"
     },
     {
       "title": "Manutentionnaire",
@@ -25,7 +38,8 @@
       "location": "Pau",
       "start": "2024-07",
       "end": "2024-08",
-      "description": "Agent polyvalent en centre de tri."
+      "description": "Agent polyvalent en centre de tri.",
+      "image": "assets/experiences/laposte.jpg"
     },
     {
       "title": "Stagiaire projet",
@@ -33,7 +47,8 @@
       "location": "Rabat, Maroc",
       "start": "2024-04",
       "end": "2024-06",
-      "description": "Conception et développement d'une application WEB de GMAO. Utilisation de la technologie Angular."
+      "description": "Conception et développement d'une application WEB de GMAO. Utilisation de la technologie Angular.",
+      "image": "assets/experiences/tgr.jpg"
     }
   ],
   "education": [
@@ -43,7 +58,8 @@
       "location": "Saint-Etienne",
       "start": "2024-09",
       "end": null,
-      "description": "Formation d'Ingénieur sous Statut Étudiant. Formation d'ingénieur généraliste en informatique et optique."
+      "description": "Formation d'Ingénieur sous Statut Étudiant. Formation d'ingénieur généraliste en informatique et optique.",
+      "image": "assets/education/fise.png"
     },
     {
       "degree": "CITISE",
@@ -51,7 +67,8 @@
       "location": "Saint-Etienne",
       "start": "2022-09",
       "end": "2024-06",
-      "description": "Classe préparatoire intégrée diplômante. Diplômes obtenus : DUT GEII, DU CITISE. Équivalent L2 Physique de l’ingénieur."
+      "description": "Classe préparatoire intégrée diplômante. Diplômes obtenus : DUT GEII, DU CITISE. Équivalent L2 Physique de l’ingénieur.",
+      "image": "assets/education/citise.png"
     }
   ],
   "projects": [
@@ -61,7 +78,8 @@
       "location": "Saint-Etienne",
       "start": "2024-12",
       "end": "2025-02",
-      "description": "Développement d'une application WEB vitrine pour la liste BDE « BA'TSE ». Technologies : HTML5, CSS, TypeScript, Angular."
+      "description": "Développement d'une application WEB vitrine pour la liste BDE « BA'TSE ». Technologies : HTML5, CSS, TypeScript, Angular.",
+      "image": "assets/projects/vitrine.png"
     },
     {
       "title": "Logiciel de simulation de gravité",
@@ -69,7 +87,8 @@
       "location": "Saint-Etienne",
       "start": "2025-01",
       "end": "2025-05",
-      "description": "Développement d'un logiciel de simulation de gravité d'atomes de Sable en C# avec SFML."
+      "description": "Développement d'un logiciel de simulation de gravité d'atomes de Sable en C# avec SFML.",
+      "image": "assets/projects/simulation.png"
     }
   ],
   "personal": [
@@ -79,7 +98,8 @@
       "location": "Saint-Etienne",
       "start": "2025-05",
       "end": null,
-      "description": "Président pour l'année 2025-2026. Gestion d'équipe, administrative et événementielle."
+      "description": "Président pour l'année 2025-2026. Gestion d'équipe, administrative et événementielle.",
+      "image": "assets/personal/bds.png"
     },
     {
       "title": "Marathon en relais",
@@ -87,7 +107,8 @@
       "location": "Biarritz",
       "start": "2025-04",
       "end": "2025-04",
-      "description": "Participation à un marathon en relais (14km)."
+      "description": "Participation à un marathon en relais (14km).",
+      "image": "assets/personal/marathon.png"
     }
   ],
   "interests": ["Ski", "Snowboard", "Course à pied"]

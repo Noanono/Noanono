@@ -1,1 +1,15 @@
-<p>pro works!</p>
+<section class="experience section-container">
+  <h2>Expérience Professionnelle</h2>
+  <div class="experience-list">
+    <div class="experience-item" *ngFor="let exp of experiences">
+      <img *ngIf="exp.image" [src]="exp.image" alt="{{exp.company}}" class="experience-img" />
+      <div class="experience-details">
+        <h3>{{ exp.title }} <span *ngIf="exp.company">- {{ exp.company }}</span></h3>
+        <p><strong>Lieu :</strong> {{ exp.location }}</p>
+        <p><strong>Période :</strong> {{ exp.start }} - {{ exp.end || 'Aujourd\'hui' }}</p>
+        <p>{{ exp.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="section-separator" />

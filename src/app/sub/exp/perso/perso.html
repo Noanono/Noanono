@@ -1,1 +1,15 @@
-<p>perso works!</p>
+<section class="personal-experience section-container">
+  <h2>Expérience Personnelle</h2>
+  <div class="personal-list">
+    <div class="personal-item" *ngFor="let perso of personal">
+      <img *ngIf="perso.image" [src]="perso.image" alt="{{perso.organization}}" class="personal-img" />
+      <div class="personal-details">
+        <h3>{{ perso.title }} <span *ngIf="perso.organization">- {{ perso.organization }}</span></h3>
+        <p><strong>Lieu :</strong> {{ perso.location }}</p>
+        <p><strong>Période :</strong> {{ perso.start }} - {{ perso.end || 'Aujourd\'hui' }}</p>
+        <p>{{ perso.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="section-separator" />

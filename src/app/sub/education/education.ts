@@ -1,16 +1,16 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProfileService } from '../../../services/profile.service';
+import { ProfileService } from '../../services/profile.service';
 
 @Component({
-  selector: 'app-pro',
+  selector: 'app-education',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './pro.html',
-  styleUrls: ['./pro.scss']
+  templateUrl: './education.html',
+  styleUrls: ['./education.scss']
 })
-export class ProComponent implements OnInit {
-  experiences: any[] = [];
+export class EducationComponent implements OnInit {
+  education: any[] = [];
   error = false;
 
   constructor(private profileService: ProfileService, private cdr: ChangeDetectorRef) {}
@@ -18,7 +18,7 @@ export class ProComponent implements OnInit {
   ngOnInit() {
     this.profileService.getProfile().subscribe({
       next: (data: any) => {
-        this.experiences = data.experiences;
+        this.education = data.education;
         this.error = false;
         this.cdr.markForCheck();
       },
