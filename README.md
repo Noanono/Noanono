@@ -13,7 +13,7 @@ Engagé dans la transition écologique, j’ai notamment travaillé sur la recon
 - [LinkedIn](https://www.linkedin.com/in/noah-soler-9b0471267/)
 - [Instagram](https://www.instagram.com/noah_slr64/)
 - [Email](mailto:soler.noah@gmail.com)
-- [Site Web](https://ba-tse.online)
+- [Site Web](https://soler-pro.fr)
 
 ## 📊 Statistiques
 
@@ -43,7 +43,7 @@ I’m committed to ecological transition—like helping ski resorts reinvent the
 - [LinkedIn](https://www.linkedin.com/in/noah-soler-9b0471267/)
 - [Instagram](https://www.instagram.com/noah_slr64/)
 - [Email](mailto:soler.noah@gmail.com)
-- [Website](https://ba-tse.online)
+- [Website](https://soler-pro.fr)
 
 ## 📊 Stats
 
